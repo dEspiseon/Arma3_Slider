@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arma 3</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="slider-container with-pattern">
+        <button class="autoplay-toggle" onclick="toggleAutoPlay()">▶</button>
+        <div class="buttons-container">
+            <button class="info-button" onclick="showInfo('game-info')">Об игре</button>
+            <button class="info-button" onclick="showInfo('system-requirements')">Системные требования</button>
+            <button class="admin-button" onclick="openAdminPanel()">Управление слайдером</button>
+        </div>
+        
+        <div class="slider">
+            <div class="slide">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/107410/ss_e9220742c6b786efc9145c58ce7b276af891e9d5.1920x1080.jpg?t=1741874270" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="https://storage.googleapis.com/gfn-am-games-catalogue-assets/arma_3_screenshot_15.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="https://i.playground.ru/e/afBFHRZ67FjUg16HMiPNQQ.jpeg" alt="Slide 3">
+            </div>
+        </div>
+        <div class="slider-thumbnails">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/107410/ss_e9220742c6b786efc9145c58ce7b276af891e9d5.1920x1080.jpg?t=1741874270" alt="Thumbnail 1" class="slider-thumbnail active">
+            <img src="https://storage.googleapis.com/gfn-am-games-catalogue-assets/arma_3_screenshot_15.jpg" alt="Thumbnail 2" class="slider-thumbnail">
+            <img src="https://i.playground.ru/e/afBFHRZ67FjUg16HMiPNQQ.jpeg" alt="Thumbnail 3" class="slider-thumbnail">
+        </div>
+
+        <div id="game-info" class="info-container with-pattern">
+            <button class="close-button" onclick="hideInfo('game-info')">&times;</button>
+            <h2>Об игре Arma 3</h2>
+            <p>Arma 3 - тактический военный шутер с открытым миром, разработанный студией Bohemia Interactive. Игра предлагает невероятно реалистичный опыт современных боевых действий.</p>
+            <p>Основные особенности:</p>
+            <ul>
+                <li>Огромный открытый мир площадью более 290 км²</li>
+                <li>Реалистичная физика и баллистика</li>
+                <li>Более 40 видов оружия с возможностью модификации</li>
+                <li>Разнообразная военная техника: наземная, воздушная и морская</li>
+                <li>Продвинутая система искусственного интеллекта</li>
+                <li>Мощный редактор миссий и поддержка пользовательских модификаций</li>
+            </ul>
+            <p>Игра позволяет участвовать в масштабных сражениях, выполнять тактические задания и координировать действия с другими игроками в многопользовательском режиме.</p>
+        </div>
+        
+        <div id="system-requirements" class="info-container with-pattern">
+            <button class="close-button" onclick="hideInfo('system-requirements')">&times;</button>
+            <h2>Системные требования</h2>
+            <p><strong>Минимальные:</strong></p>
+            <ul>
+                <li>Операционная система: Windows 7/8/10 (64-bit)</li>
+                <li>Процессор: Intel Dual-Core 2.4 GHz или AMD Dual-Core Athlon 2.5 GHz</li>
+                <li>Оперативная память: 4 GB RAM</li>
+                <li>Видеокарта: NVIDIA GeForce 9800GT / AMD Radeon HD 5670 / Intel HD Graphics 4000 с 512 MB VRAM</li>
+                <li>DirectX: Версия 10</li>
+                <li>Место на диске: 20 GB</li>
+                <li>Звуковая карта: DirectX®-совместимая</li>
+            </ul>
+            <p><strong>Рекомендуемые:</strong></p>
+            <ul>
+                <li>Операционная система: Windows 7/8/10 (64-bit)</li>
+                <li>Процессор: Intel Core i5-4460 или AMD FX 4300</li>
+                <li>Оперативная память: 8 GB RAM</li>
+                <li>Видеокарта: NVIDIA GeForce GTX 660 / AMD Radeon HD 7800 с 2 GB VRAM</li>
+                <li>DirectX: Версия 11</li>
+                <li>Место на диске: 25 GB</li>
+                <li>Звуковая карта: DirectX®-совместимая</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script defer src="./js/main.js"></script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление слайдером Arma 3</title>
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+<body class="with-pattern">
+    <div class="container">
+        <h1>Управление слайдером Arma 3</h1>
+        
+        <div id="message" class="message"></div>
+        
+        <div class="upload-section">
+            <h2>Добавить новое изображение</h2>
+            <div class="upload-form">
+                <div class="file-input-container">
+                    <label class="file-input-label" for="image-file">Выбрать файл с компьютера</label>
+                    <input type="file" id="image-file" class="file-input" accept="image/*">
+                </div>
+                
+                <p>ИЛИ</p>
+                
+                <input type="text" id="image-url" class="url-input" placeholder="Вставьте URL изображения">
+                
+                <div class="preview-container">
+                    <img id="preview-image" class="preview-image" alt="Предпросмотр">
+                </div>
+                
+                <button id="add-image" class="add-button">Добавить изображение</button>
+            </div>
+        </div>
+        
+        <div class="images-section">
+            <h2>Текущие изображения</h2>
+            <div id="images-list" class="images-list">
+                <!-- Здесь будут отображаться текущие изображения -->
+            </div>
+        </div>
+        
+        <button id="save-changes" class="save-button">Сохранить изменения</button>
+    </div>
+    <script defer src="./js/admin.js"></script>
+</body>
+</html>
