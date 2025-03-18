@@ -1,3 +1,3 @@
 # Arma3_Slider
 
-[Arma3_Slider](https://despiseon.github.io/Arma3_Slider/){:target="_blank"}
+[Arma3_Slider](https://despiseon.github.io/Arma3_Slider/)
